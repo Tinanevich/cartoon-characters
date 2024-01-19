@@ -2,6 +2,7 @@ import CharactersList from 'components/CharactersList';
 import { useState, useEffect } from 'react';
 import getCharacters from 'services/getCharacters';
 import { ICharacter } from 'types/ICharacter';
+import ToTop from 'components/ToTop';
 
 
 const CharactersListPage = () => {
@@ -18,6 +19,7 @@ const CharactersListPage = () => {
   return (
     <div className="CharactersListPage">
       {<CharactersList list={charactersList}/>}
+      {<ToTop/>}
     </div>
   );
 }

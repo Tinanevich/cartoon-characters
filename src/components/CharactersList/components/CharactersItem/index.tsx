@@ -3,7 +3,6 @@ import { ICharacter } from 'types/ICharacter';
 import useModal from 'hooks/useModal';
 import Modal from 'components/Modal';
 
-
 import './styles.scss'
 
 interface ICharacterItemProps {
