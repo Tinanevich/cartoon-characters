@@ -13,16 +13,16 @@
 
   .modal-box {
     display: block;
-    background: white;
     width: 56%;
     height: 65%;
     border-radius: 1rem;
     padding: 0;
   }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 650px){
   .modal-box{
     min-width: 10%;
-    max-height: 500%;
+    max-height: 100%;
+    background: white;
   }
 }

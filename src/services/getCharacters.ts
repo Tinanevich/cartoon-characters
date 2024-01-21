@@ -1,10 +1,10 @@
 import axios, { AxiosResponse, AxiosRequestConfig } from 'axios';
 import {ICharacterResponse} from 'types/ICharacter';
 
-const getCharacters = (): Promise<AxiosResponse<ICharacterResponse>> => {
+const getCharacters = (url:string): Promise<AxiosResponse<ICharacterResponse>> => {
   const options: AxiosRequestConfig = {
     method: 'GET',
-    url: 'https://rickandmortyapi.com/api/character',
+    url: url
   };
   return axios.request(options);
 };

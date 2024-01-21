@@ -1,10 +1,12 @@
 export interface ICharacterResponse {
-    info: {
-        count: number;
-        pages: number;
-        next: string;
-    };
+    info: ICharacterInfo;
     results: ICharacter[];
+}
+export interface ICharacterInfo {
+    count: number;
+    pages: number;
+    next: string;
+    prev: string;
 }
 
 export interface ICharacter {

@@ -17,10 +17,9 @@ const CharactersItem: FC<ICharacterItemProps> = ({item})=> {
          <p className="name">{item.name}</p>
             <Modal active={active} toggle={toggle}>
                <span className='modal'>
-                  <div className='div_modal'>
-                     <img className="img_modal" src={item.image} alt={item.image} />
-                  </div>
-                  <p className="info">
+                  <img className="img_modal" src={item.image} alt={item.image} />
+                  <p className='gradient_modal'></p>
+                  <p className="info_modal">
                      <ul className='info-left'>
                         <li className="name_modal">Name: <p className="content">{item.name}</p></li>
                         <li className="name_modal">Status: <p className="content">{item.status}</p></li>
