@@ -27,12 +27,12 @@
         margin-left: -8px;
     }
     .modal {
+        height: 100%;
         .gradient_modal {
             width: 100%;
             height: 100%;
-            z-index: 7;
-            position: relative;
-            top: -101%;
+            z-index: 4;
+            position: relative ;
             border-radius: 1rem;
             background: linear-gradient(to left, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
         }
@@ -40,15 +40,16 @@
             width: 50%;
             height: 100%;
             border-radius: 1rem 0rem 0rem 1rem;
-            z-index: 5;
+            z-index: 1;
+            top: -100%;
             position: relative;
         }
         .info_modal {
             max-width: 50%;
-            position: relative;
-            right: -48%;
+            position: relative ;
+            right: -47%;
             top: -200%;
-            z-index: 8;
+            z-index: 5;
             display: flex;
             list-style-type: none;
             gap: 10px;
@@ -67,19 +68,15 @@
 }
 @media screen and (max-width: 1100px){
     .modal {
-        .gradient_modal {
-            max-width: 100%;
-            max-height: 100%;
-        }
         .img_modal {
-            width: 50% !important;
-            max-height: auto !important;
             object-fit: cover;
             object-position: bottom;
         }
         .info_modal {
             gap: 0px;
             display: inline-block !important;
+            right: 0% !important;
+            top: -130% !important;
             .info-left, .info-right{
                 margin-bottom: 1px;
                 padding-left: 9px;
@@ -99,19 +96,17 @@
 @media screen and (max-width: 650px){
     .modal {
         .gradient_modal {
-            display: none;
+            background: linear-gradient(to top, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%) !important;
         }
         .img_modal {
-            max-width: 100%;
             width: 100% !important;
-            height: 70% !important;
-            max-height: 200px;
+            height: 60% !important;
             border-radius: 1rem 1rem 0rem 0rem !important;
             object-fit: fill;
         }
         .info_modal {
-            left: 18%;
-            top: -4% !important;
+            left: 13%;
+            top: -105% !important;
             display: flex !important;
             .info-left, .info-right{
                 width: 100%;
