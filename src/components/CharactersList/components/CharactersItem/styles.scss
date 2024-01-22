@@ -27,7 +27,10 @@
         margin-left: -8px;
     }
     .modal {
-        height: 100%;
+        width: 56%;
+        height: 65%;
+        border-radius: 1rem;
+        padding: 0;
         .gradient_modal {
             width: 100%;
             height: 100%;
@@ -95,6 +98,8 @@
 
 @media screen and (max-width: 650px){
     .modal {
+              min-width: 10%;
+              max-height: 100%;
         .gradient_modal {
             background: linear-gradient(to top, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%) !important;
         }
@@ -106,7 +111,7 @@
         }
         .info_modal {
             left: 13%;
-            top: -105% !important;
+            top: -107% !important;
             display: flex !important;
             .info-left, .info-right{
                 width: 100%;

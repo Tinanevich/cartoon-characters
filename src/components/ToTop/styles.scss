@@ -1,6 +1,6 @@
 .btn-toTop {
     position: fixed;
-    bottom: 25px;
+    bottom: 13px;
     font-size: 3.5rem;
     z-index: 1;
     cursor: pointer;
@@ -11,4 +11,10 @@
     padding: 0px;
     border: none;
     opacity: 0.8;
+}
+
+@media screen and (max-width: 650px){
+    .btn-toTop{
+        font-size: 2.8rem;
+    }
 }
