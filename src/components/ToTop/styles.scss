@@ -1,4 +1,4 @@
-.btn-toTop {
+.toTop {
     position: fixed;
     bottom: 13px;
     font-size: 3.5rem;
@@ -8,13 +8,24 @@
     right: 2%;
     background: none;
     border-radius: 40px;
-    padding: 0px;
     border: none;
     opacity: 0.8;
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 @media screen and (max-width: 650px){
-    .btn-toTop{
+    .toTop{
         font-size: 2.8rem;
     }
 }

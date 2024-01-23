@@ -24,7 +24,7 @@ const ToTop = () => {
     };
 
     return (
-        <button className="btn-toTop"
+        <button className="toTop"
             style={{display: isVisible ? 'block':'none'}}
             onClick={goTop}>
             <FaArrowCircleUp/>

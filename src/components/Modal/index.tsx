@@ -14,11 +14,9 @@ const Modal = (props:ModalType) => {
         <>
         {props.active && (
             <div className="modal-overlay" onClick={props.toggle}>
-               
-                    {props.children}
-                
+                {props.children}
             </div>
-      )}
+        )}
         </>
     )
 }

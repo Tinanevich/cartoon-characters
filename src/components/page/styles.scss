@@ -1,12 +1,44 @@
-.btn_loader {
-    font-size: 3.5rem;
-    z-index: 1;
-    color: rgb(142, 145, 142);
-    border-radius: 40px;
-    background: none;
-    padding: 0px;
-    border: none;
-    margin: 0 auto;
-    display: block;
-    bottom: 13px;
+.charactersListPage {
+    &_loader {
+        animation: move 2s linear infinite;
+        font-size: 4rem;
+        z-index: 1;
+        color: rgb(142, 145, 142);
+        margin: -70px auto;
+        display: block;
+    }
+
+    @keyframes move {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+          transform: rotate(180deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+    }
+    &_load_more{
+        font-size: 1.6rem;
+        z-index: 1;
+        color: white;
+        border-radius: 40px;
+        background: rgb(142, 145, 142);;
+        padding: 8px;
+        border: none;
+        opacity: 0.9;
+        display: flex;
+        margin: 20px auto;
+    }
+      @media screen and (max-width: 650px){
+        &_loader {
+          font-size: 2.5rem;
+        }
+        &_load_more{
+          font-size: 1rem;
+        }
+    }
 }
